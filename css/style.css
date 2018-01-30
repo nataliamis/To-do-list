@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: url("vintage-concrete.png");
+}
+
+.tasks {
+    border: 10px ridge rosybrown;
+    width: 500px;
+    padding: 30px;
+    margin: 30px 0 0 0;
+    background: url("hip-square.png");
+}
+
+.tasks h1 {
+    margin: 0 0 10px 30px;
+    font-size: 50px;
+    border-bottom: .5px solid black;
+    color: saddlebrown;
+    text-align: center;
+
+}
+
+.tasks .pin {
+    background: url("pushpin-147918_640.png") center no-repeat;
+    background-size: cover;
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: -10px 5px 0 0;
+}
+
+.tasks .pin2 {
+    background: url("pushpin-147918_640.png") center no-repeat;
+    background-size: cover;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: -10px 0 0 5px;
+}
+
+.tasks .addTask {
+    border: none;
+    background: none;
+    font-size: 60px;
+    height: 30px;
+}
+
+.tasks .addTask:focus {
+    outline: 0;
+}
+
+.tasks > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+
+}
+
+.tasks > div .removeAllTasks {
+    height: 50px;
+    padding: 0 30px;
+    background-color: orangered;
+    border-radius: 10px;
+    color: white;
+    border: 1px dotted firebrick;
+    font-size: 20px;
+}
+
+.tasks > div .removeAllTasks:focus {
+    outline: 0;
+}
+.tasks > div .removeAllTasks:active {
+    background-color: orange;
+}
+
+.taskList {
+    padding: 0;
+    margin: 0;
+    width: 300px;
+}
+
+.taskList li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px;
+}
+
+.taskList li input {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.taskList li .completeBtn {
+    width: 30px;
+    height: 30px;
+    background-color: lightgrey;
+    border: .5px solid black;
+}
+
+.taskList li .acceptBtn {
+    width: 30px;
+    height: 30px;
+    background-color: yellowgreen;
+
+}
+
+.taskList li .deleteBtn {
+    width: 30px;
+    height: 30px;
+    background-color: lightcoral;
+}
+
+
